@@ -37,8 +37,7 @@ To get started developing right away:
 ```
 
 ## Screenshots and video of this app 
-
-<a><img src="https://media.giphy.com/media/5qG0R1XG0pxVrMnk0i/giphy.gif" alt style="max-width: 100%;"></a>
+![Alt text](https://media.giphy.com/media/5qG0R1XG0pxVrMnk0i/200w_d.gif)
 
 ![Alt text](assets/smartmockups_jjn0tvps.jpg "Mockup smartphones")
 
