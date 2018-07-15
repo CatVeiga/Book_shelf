@@ -40,11 +40,11 @@ To get started developing right away:
 
 ![Alt text](https://media.giphy.com/media/5qG0R1XG0pxVrMnk0i/giphy.gif)
 
-![Alt text](assets\smartmockups_jjn0tvps.jpg "Mockup smartphones")
+![Alt text](assets/smartmockups_jjn0tvps.jpg "Mockup smartphones")
 
-![Alt text](assets\smartmockups_jjn0v3ex.jpg "Mockup Desktop")
+![Alt text](assets/smartmockups_jjn0v3ex.jpg "Mockup Desktop")
 
-![Alt text](assets\smartmockups_jjn0xebe.jpg "Mockup Tablet")
+![Alt text](assets/smartmockups_jjn0xebe.jpg "Mockup Tablet")
 
 ## Important
 The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
