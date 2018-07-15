@@ -2,7 +2,9 @@
 
 This is the starter template for the final assessment project for Udacity's React Fundamentals course. 
 
+## Live preview 
 
+Click on this to see the live preview of this app <a href="https://book-shelf-fend.herokuapp.com/">▶️</a>
 
 ## TL;DR
 
