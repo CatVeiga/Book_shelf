@@ -1,0 +1,206 @@
+html, body, .root {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+body, .app {
+  background: white;
+}
+
+/* main page */
+
+.list-books {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d8d8d8' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.list-books-title {
+  padding: 10px 0;
+  background: #3E2F5B;
+  border-radius: 0 10px 0 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Wendy One', sans-serif;
+}
+
+.list-books-title h1 {
+  font-weight: 400;
+  margin: 0;
+  color: white;
+}
+
+.list-books-content {
+  padding: 0 0 80px;
+  flex: 1;  
+}
+
+.bookshelf {
+  padding: 0 10px 20px;
+}
+
+@media (min-width: 600px) {
+  .bookshelf {
+    padding: 0 20px 40px;
+  }
+}
+
+.bookshelf-title {
+  width: 60%;
+  margin: 0 auto;  
+  margin-bottom: 10px;
+  border-radius: 10px 0 10px 0;
+  background: #E0CA3C;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Wendy One', sans-serif;
+}
+
+.bookshelf-books {
+  text-align: center;
+}
+
+.open-search {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+.open-search a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #F34213;
+  background-image: url('./icons/add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size: 0;
+}
+
+/* search page */
+
+.search-books-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);  
+}
+
+.search-books-input-wrapper {
+  flex: 1;
+  background: #AFECE7;
+}
+.search-books-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+.close-search {
+  display: block;
+  top: 20px;
+  left: 15px;
+  width: 50px;
+  height: 53px;
+  background: white;
+  background-image: url('./icons/arrow-back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  font-size: 0;
+}
+
+.search-books-results {
+  padding: 80px 10px 20px;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d8d8d8' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* books grid */
+
+.books-grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(62, 47, 91, 0.30);
+  border-radius: 10px 0 10px 0;
+}
+
+.books-grid li {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.book {
+  width: 140px;
+  text-align: center;
+}
+
+.book-title,
+.book-authors {
+  font-size: 0.8em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+.book-title {
+  margin-top: 10px;
+  color: #E0CA3C;
+  
+}
+.book-authors {
+  color: #AFECE7;
+}
+
+.book-top {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.book-shelf-changer {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F34213;
+  background-image: url('./icons/arrow-drop-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.book-shelf-changer select {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* book cover */
+
+.book-cover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background: #fff;
+}
+
+.book-cover-title {
+  padding: 20px 10px 0;
+  text-align: center;
+  font-size: 0.8em;
+}
