@@ -1,4 +1,4 @@
-# Book Shelf Project
+# Book Shelf Project [![Build Status](https://travis-ci.org/cveiga819/Book_shelf.svg?branch=master)](https://travis-ci.org/cveiga819/Book_shelf)
 
 This is the starter template for the final assessment project for Udacity's React Fundamentals course. 
 
